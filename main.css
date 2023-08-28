@@ -7,11 +7,7 @@
 body{
     background-color: blanchedalmond;
 }
-
-body{
-
-    
-}
+body>*{}
 
 header, footer, main, aside{
     border-radius:2rem;
@@ -19,8 +15,13 @@ header, footer, main, aside{
     padding:2rem;
 }
 
+header,footer, .container{
+    margin: 1rem auto;
+}
+
 img{
     width:100%;
+    max-width:50rem;
     border-radius:0.5rem
 }
 
@@ -33,34 +34,64 @@ header{
     background-color: deeppink;
     margin-right:auto;
     max-width: 95rem;
-    margin: 1rem;
 }
 
-main{
-    background-color:pink;
-    color:purple;
+
+    #logo {
+        width: 10rem;
+        display: inline-block;
+    }
+
+
+    nav{
+        display:inline-block;
+    }
+
+
+.container{
+    display:flex;
+    flex-flow: row  wrap;
+    align-items:flex-start;
+    max-width: 100rem;
+    background-color:black;
+    border:dashed Black 6px;
 }
 
-#logo {
-    width: 10rem;
-    display: inline block;
-}
 
 nav ul li{
     display:inline-block;
     font-weight:bold;
     color: white;
-    margin:1rem;
     font-size:2.5rem;
-
+    margin:1rem;
 }
 
-main>*{
-    margin: 2rem;
+main{
+    background-color:pink;
+    color:purple;
+
+    flex-grow: 4;      /* it can grow */
+    flex-shrink: 1;    /* it can shrink */
+    flex-basis: 55rem; /* arbitrary depending on design */
+    min-width: 225px;  /* equal to flex-basis */
+    padding: .5em;     /* half of desired margin */
 }
 
-nav{
-    display:inline-block;
+
+aside{
+    background-color: rosybrown;
+    flex-basis:35rem;
+    height:auto;
+
+        
+    flex-grow: 1;   
+    flex-shrink: 4;  
+    flex-basis: 20%;
+    min-width: 5rem;
+    padding: 2rem;
+}
+
+article{
     margin: 2rem;
 }
 
@@ -68,27 +99,11 @@ footer{
     background-color:deeppink;
     text-align:center;
     max-width: 95rem;
-    margin-right:auto;
-    margin: 1rem;
 }
 
-article{
-    max-width: 55rem;
+
+
+.ads{
+    color:white;
 }
 
-aside{
-    background-color: rosybrown;
-    flex-grow: 1;
-    flex-shrink:4;
-    max-width:30rem;
-    height:auto;
-}
-
-container{
-    display:flex;
-    width:100%;
-    align-items:flex-start;
-
-
-
-}
