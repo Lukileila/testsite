@@ -53,8 +53,6 @@ header{
     flex-flow: row  wrap;
     align-items:flex-start;
     max-width: 100rem;
-    background-color:black;
-    border:dashed Black 6px;
 }
 
 
